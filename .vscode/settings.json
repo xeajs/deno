@@ -1,0 +1,17 @@
+{
+  /** 启用扩展 */
+  "deno.enable": true,
+  /** 导入映射的文件路径 默认是null */
+  // "deno.import_map": null,
+  /** 实验性的 */
+  "deno.unstable": true,
+  /** deno.unstable = true 启用lint*/
+  "deno.lint": true,
+  "editor.formatOnSave": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "deno.import_intellisense_origins": {
+    "https://deno.land": true
+  }
+}

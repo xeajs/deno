@@ -1,0 +1,9 @@
+# dependencies
+
+# production
+build
+output
+Temp
+
+# misc
+.DS_Store
