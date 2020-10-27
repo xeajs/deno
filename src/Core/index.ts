@@ -1,10 +1,11 @@
-import { Application } from "../Deps/index.ts";
+import Config from "../Config/index.ts";
+import { Oak } from "../Deps.ts";
 
-export const Listen = (App: Application) => {
+export const Listen = (App: Oak.Application) => {
   App.addEventListener("listen", ({ port }) => {
     console.info(``);
     console.info(`Local: http://localhost:${port}`);
     console.info(``);
   });
-  App.listen({ port: 8000 });
+  App.listen({ port: Config.port });
 };

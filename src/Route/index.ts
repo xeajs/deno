@@ -1,12 +1,10 @@
-import { Router } from "../Deps/index.ts";
+import * as RouteHandle from "../Controller/index.ts";
 
-const Route = new Router();
+import { Oak } from "../Deps.ts";
 
-Route.get("/", async (ctx) => {
-  ctx.response.body = "/";
-});
-Route.post("/", async (ctx) => {
-  ctx.response.body = "/";
-});
+const Route = new Oak.Router();
+
+Route.get("/", RouteHandle.getHello);
+Route.post("/", RouteHandle.getHello);
 
 export default Route;

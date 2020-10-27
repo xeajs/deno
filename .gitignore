@@ -1,4 +1,5 @@
 # dependencies
+.deno_plugins
 
 # production
 build
