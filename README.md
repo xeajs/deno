@@ -6,7 +6,7 @@
 
 ## 开发环境
 
-`deno run -A src/index.ts --unstable --watch`
+`deno run -A --unstable --watch src/index.ts`
 
 ## 构建打包
 
@@ -14,6 +14,6 @@
 
 ## 上线部署
 
-`deno run -A DenoServe`
+`deno run -A --unstable DenoServe`
 
 ## End
